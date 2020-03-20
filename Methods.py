@@ -43,6 +43,5 @@ dog_dictionary['name'] = 'Fido'
 print(dog_dictionary['name'])
 print(sum(test_yourself) / len(test_yourself))
 print(test_yourself[round(len(test_yourself) / 2) - 1])
-
-
+print(list(dict.fromkeys("asdfdfsfghsethsth")))
 
