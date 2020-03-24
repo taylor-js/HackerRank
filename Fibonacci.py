@@ -4,4 +4,12 @@ def F(n):
     else:
         return F(n-1)+F(n-2)
 
-print(F(10))
+def F(n,cache={}):
+    if n in cache:
+        return cache[n]
+    elif n > 1:
+        return cache.setdefault(n,F(n-1)+F(n-2))
+    return n
+
+for i in range(40): # index memoized function
+    print(i, F(i))

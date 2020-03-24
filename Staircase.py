@@ -14,4 +14,11 @@ def staircase(n):
     for elem in hashdict.values():
         print(elem)
 
-staircase(20)
+def stairs(n):
+    t = 1
+    while n > 0:
+        print(n * (" ") + t * ("#"))
+        n -= 1
+        t += 1
+
+stairs(20)
