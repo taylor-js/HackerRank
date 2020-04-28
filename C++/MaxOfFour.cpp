@@ -5,9 +5,6 @@
 
 using namespace std;
 
-/*
-Add `int max_of_four(int a, int b, int c, int d)` here.
-*/
 int max_of_four(int a, int b, int c, int d){
     int v[4] = { a, b, c, d };
     int max = v[0];
