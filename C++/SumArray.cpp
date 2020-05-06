@@ -15,7 +15,8 @@ int calculateTotalScore(int a[], int n)
     return accumulate(a, a + n, initial_sum); 
 }
 
-int main(){
+int main()
+{
     int n;
     cin >> n;
     int arr[n];
