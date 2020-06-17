@@ -1,37 +1,34 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main()
 {
     int n;
-    cout << "Enter number of elements you want to insert: ";
-    cin >> n;
-    int arr[n];
+	cin >> n;
+	int arr[n];
     int temp;
 
     int i = 0;
     int j = n - 1;
 
-    for (i = 0; i < n; i++)
-    {
-        cout << "Enter element " << i + 1 << ":";
-        cin >> arr[i];
-    }
-
-    while (i < n / 2)
-    {
+	for(int c1 = 0; c1 < n; c1++)
+	{
+		cin >> arr[c1];
+	}
+    while (i < n / 2){
         temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+		arr[i] = arr[j];
+		arr[j] = temp;
 
         i++;
         j--;
     }
 
-    cout << "\nReverse array" << endl;
+	for(int c2 = 0; c2 < n; c2++)
+	{
+		cout << arr[c2] << " ";
+	}
 
-    for (i = 0; i < n; i++)
-        cout << arr[i] << " ";
-
-    return 0;
+	return 0;
 }
+
