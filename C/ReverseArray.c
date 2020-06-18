@@ -26,7 +26,7 @@ int main()
 
     for (int c2 = 0; c2 < n; c2++)
     {
-        printf("%d ", trim(arr[c2]));
+        printf("%d ", arr[c2]);
     }
     return 0;
 }
